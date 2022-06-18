@@ -23,7 +23,7 @@ import { db } from "../firebase";
 import Moment from "react-moment";
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 
-export default function ({ id, username, userImg, img, caption }) {
+export default function Post({ id, username, userImg, img, caption }) {
   const { data: session } = useSession();
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);

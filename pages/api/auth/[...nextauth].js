@@ -6,6 +6,7 @@ export default NextAuth({
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      secret: process.env.SECRET,
     }),
     // ...add more providers here
   ],
@@ -24,6 +25,4 @@ export default NextAuth({
       return session;
     },
   },
-
-  secret: process.env.SECRET,
 });

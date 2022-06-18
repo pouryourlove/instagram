@@ -10,7 +10,9 @@ export default function signin({ providers }) {
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen px-14 text-center">
         <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
-        <p className="font-xs italic">This is not a real app blahblah</p>
+        <p className="font-xs italic">
+          This is instagram clone made by Juyeon!
+        </p>
         <div className="mt-40">
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>

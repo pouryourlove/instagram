@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import Post from "./Post";
 
-export default function posts() {
+export default function Posts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(

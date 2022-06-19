@@ -10,7 +10,7 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-  secret: process.env.NEXT_PUBLIC_SECRET,
+  secret: "fb13e260b7a78e67e0b66527a6823f37",
   pages: {
     signIn: "/auth/signin",
   },
